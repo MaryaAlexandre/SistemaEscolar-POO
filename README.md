@@ -1,8 +1,8 @@
-#Sistema de Gerenciamento Escolar
+# Sistema de Gerenciamento Escolar
 Visão Geral
 Este projeto consiste no desenvolvimento de um Sistema de Gerenciamento Escolar implementado em Java, com uma interface de linha de comando. O sistema permite que administradores e professores realizem o cadastro de alunos, disciplinas, professores e turmas, além de possibilitar o registro de notas, cálculo de médias e emissão de boletins escolares. O sistema também implementa regras de avaliação com critérios de aprovação baseados nas notas dos alunos.
 
-#Funcionalidades Principais
+# Funcionalidades Principais
 1. Cadastro de Entidades
 Alunos: Permite o cadastro de novos alunos com informações como nome completo e número de matrícula.
 Disciplinas: Permite o cadastro de disciplinas semestrais, cada uma com um nome e código único.
@@ -20,7 +20,7 @@ Prova Final: A média final é recalculada considerando a nota da prova final, s
 5. Emissão de Boletins
 Boletim Individual: O sistema permite a emissão de boletins individuais contendo o nome completo do aluno, matrícula, disciplinas cursadas, notas obtidas e a situação final (Aprovado ou Reprovado).
 Estrutura do Código
-#Classes Principais
+# Classes Principais
 Aluno: Representa os alunos no sistema, com atributos como nome e matrícula.
 Disciplina: Armazena informações sobre cada disciplina, como nome e código.
 Professor: Contém os dados dos professores.
@@ -29,7 +29,7 @@ SistemaEscolar: Centraliza as operações principais do sistema, permitindo a in
 Classe Turma
 A classe Turma gerencia uma turma de alunos, associando-a a uma disciplina e a um professor. Além disso, a classe é responsável pelo registro das notas dos alunos, cálculo de médias e emissão de boletins. O sistema de notas considera três valores: Nota 1, Nota 2 e, se necessário, Prova Final.
 
-#Exemplo de funcionalidades da classe:
+# Exemplo de funcionalidades da classe:
 
 adicionarAluno(Aluno aluno): Adiciona um aluno à turma.
 removerAluno(Aluno aluno): Remove um aluno da turma.
@@ -39,7 +39,7 @@ emitirBoletim(Aluno aluno): Emite um boletim com as notas do aluno e sua situaç
 Tratamento de Exceções
 O sistema trata diversas exceções, como tentativas de inserção de alunos duplicados, notas fora de faixa ou alunos inexistentes em turmas. Além disso, mensagens claras de erro são fornecidas ao usuário, ajudando na identificação de problemas.
 
-#Como Usar
+# Como Usar
 Clone o repositório para sua máquina local.
 Compile e execute o código utilizando um ambiente de desenvolvimento Java (IDE ou linha de comando).
 Interaja com o sistema através da interface de linha de comando para cadastrar alunos, disciplinas, professores, atribuir notas e gerar boletins.
