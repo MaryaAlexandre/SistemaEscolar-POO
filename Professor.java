@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 // Classe que representa um professor no sistema
 public class Professor {
     private String nomeCompleto;   // Nome completo do professor

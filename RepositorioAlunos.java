@@ -1,11 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Iterator;
 
-publlic class RepositorioAlunos{
-    private List<Aluno>;
 
-public RepositorioAlunos(){
-    this.alunos = new ArrayList<>();
+public class RepositorioAlunos {
+    private List<Aluno> alunos;
+
+    // Construtor da classe
+    public RepositorioAlunos() {
+        this.alunos = new ArrayList<>();
 }
 
 public void adicionarAluno(Aluno aluno) {
@@ -20,7 +23,12 @@ public Aluno buscarAluno(String matricula){
     }
     return null;
 }
-public void removerAluno(String matricula){
-    alunos.removerIf(aluno-> aluno.getMatricula().equals(matricula));
+public void removerAluno(Aluno aluno) {
+    Iterator<Aluno> iterator = alunos.iterator();
+    while (iterator.hasNext()) {
+        if (iterator.next().equals(aluno)) {
+            iterator.remove();
+}
+}
 }
 }

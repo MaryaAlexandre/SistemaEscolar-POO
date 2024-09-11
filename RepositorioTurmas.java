@@ -20,6 +20,16 @@ public class RepositorioTurmas {
     }
     return null;
     }
+
+    public void registrarNota(Aluno aluno, int numeroNota, double nota) {
+        for (Turma turma : turmas) {
+            if (turma.getAlunos().contains(aluno)) {
+                turma.registrarNota(aluno, numeroNota, nota);
+                return;
+            }
+        }
+        System.out.println("Aluno não encontrado na turma.");
+    }
     public void removerTurma(Disciplina disciplina) {
         turmas.removeIf(turma -> turma.getDisciplina().equals(disciplina));
     }

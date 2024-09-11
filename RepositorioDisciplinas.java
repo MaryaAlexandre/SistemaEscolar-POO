@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class RepositorioDisciplinas {
-    private List<Disciplinas> disciplinas;
+    private List <Disciplina> disciplinas;
 
     public RepositorioDisciplinas(){
         this.disciplinas = new ArrayList<>();
@@ -20,6 +21,6 @@ public class RepositorioDisciplinas {
         return null;
     }
     public void removerDisciplina(String codigo) {
-        disiciplinas.removeIf(disciplina -> disciplina.getCodigo().equals(codigo));
+        disciplinas.removeIf(disciplina -> disciplina.getCodigo().equals(codigo));
     }
 }
