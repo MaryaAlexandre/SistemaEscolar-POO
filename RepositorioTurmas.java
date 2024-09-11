@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class RepositorioTurmas {
+    private List<Turma> turmas;
+
+    public RepositorioTurmas() {
+    this.turmas = new ArrayList<>();
+    }
+
+    public void adicionarTurma(Turma turma) {
+        turmas.add(turma);
+    }
+
+    public Turma buscarTurma(Disciplina disciplina){
+    for (Turma turma : turmas) {
+        if ( turma.getDisciplina().equals(disciplina)) {
+            return turma;
+        }
+    }
+    return null;
+    }
+    public void removerTurma(Disciplina disciplina) {
+        turmas.removeIf(turma -> turma.getDisciplina().equals(disciplina));
+    }
+}
