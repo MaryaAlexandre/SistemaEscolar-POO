@@ -36,6 +36,7 @@ A classe Turma gerencia uma turma de alunos, associando-a a uma disciplina e a u
 ## registrarNota(Aluno aluno, int numeroNota, double nota): Registra uma nota para o aluno.
 ## calcularMedia(Aluno aluno): Calcula a média final do aluno, considerando as duas primeiras notas e a prova final (se aplicável).
 ## emitirBoletim(Aluno aluno): Emite um boletim com as notas do aluno e sua situação (Aprovado/Reprovado).
+## cadastrarProfessor: Realiza o cadastro de professores por disciplinas.
 ## Tratamento de Exceções
 O sistema trata diversas exceções, como tentativas de inserção de alunos duplicados, notas fora de faixa ou alunos inexistentes em turmas. Além disso, mensagens claras de erro são fornecidas ao usuário, ajudando na identificação de problemas.
 
